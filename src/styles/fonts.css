@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Avo";
+  src: url("../assets/fonts/UTM\ Avo.ttf");
+}
+
+@font-face {
+  font-family: "AvoBold";
+  src: url("../assets/fonts/UTM\ AvoBold.ttf");
+}
+
+@font-face {
+  font-family: "AvoBoldItalic";
+  src: url("../assets/fonts/UTM\ AvoBold_Italic.ttf");
+}
+
+@font-face {
+  font-family: "AvoItalic";
+  src: url("../assets/fonts/UTM\ AvoItalic.ttf");
+}

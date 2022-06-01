@@ -1,0 +1,24 @@
+/*
+*
+* {{properCase name }}
+* make by huynq
+*/
+
+import React, { memo } from 'react';
+import ErrorBound from 'components/ErrorBound';
+import useInjectReducer from 'redux/useInjectReducer';
+import reducers{{ properCase name }} from './store/reducers';
+import Wrap{{ properCase name }} from './style';
+
+interface Props {}
+
+// eslint-disable-next-line
+function {{ properCase name }}({}: Props) {
+useInjectReducer('{{ properCase name }}', reducers{{ properCase name }});
+return (
+<ErrorBound>
+  <Wrap{{ properCase name }}> {{ properCase name }} </Wrap{{ properCase name }}>
+</ErrorBound>
+);
+}
+export default memo({{ properCase name }});

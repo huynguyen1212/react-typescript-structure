@@ -1,0 +1,71 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^6.8.4",
+    "react-intl": "^5.8.2",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.0",
+    "sweetalert2": "^10.3.0",
+    "typesafe-actions": "^5.1.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "generate": "plop --plopfile internals/generators/index.js",
+    "extract": "extract-messages --flat=true -d=vi --locales=en,vi --output src/assets/languages 'src/**/message*.ts'",
+    "start": "react-scripts start",
+    "dev": "concurrently --kill-others \"./node_modules/.bin/json-server --watch fake-api/db.js --port 3001 --static fake-api/static --delay 1000\" \"react-scripts start\"",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@formatjs/cli": "^2.11.3",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.3",
+    "babel-plugin-react-intl": "^8.2.3",
+    "babel-plugin-styled-components": "^1.12.0",
+    "concurrently": "6.0.0",
+    "json-server": "0.16.3",
+    "plop": "^2.7.4",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3"
+  }
+}
